@@ -463,13 +463,15 @@ textarea::-ms-input-placeholder
 
 /*For Home Section*/
 .home{
-    background: url(../images/header-bg.jpg) no-repeat center top fixed;
+    background: url(../images/nawatRotate.jpg) no-repeat center top fixed;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     width: 100%;
     overflow: hidden;
+
+
 }
 .home-wrapper{
     margin-top:240px;
@@ -480,15 +482,15 @@ textarea::-ms-input-placeholder
     text-transform:uppercase;
     color:#fff;
     font-weight:900;
-    font-family: "montserrat";
+    font-family: "franklin gothic";
     letter-spacing:12px;
     border-top:2px solid #ecf0f2;
     border-bottom:2px solid #ecf0f2;
-    padding:20px 0;
+    padding:40px 0;
 }
 .home-content p{
     font-size:25px;
-    margin-top:20px;
+    margin-top:40px;
     color:#ecf0f2;
 }
 
@@ -517,16 +519,20 @@ textarea::-ms-input-placeholder
     padding-top: 84px;
 }
 .features-item i{
-    font-size:40px;
+    font-size:50px;
+    text-transform:uppercase;
 }
 .features-item h6{
     padding-top:35px;
+    font-size:23px;
+    text-transform:uppercase;
+    color:#fff;
 }
-.features-item h6 a{
+/* .features-item h6 a{
     font-size: 18px;
     text-transform: uppercase;
     color:#fff;
-}
+} */
 .features-item h6 a:hover{
     color:#ff2b4a;
 }
@@ -818,7 +824,7 @@ Main components
     position: absolute;
     left: 10px;
     top: 8px;
-    width: 100px;
+    width: 130px;
     height: 32px;
 }
 #cd-logo img {
@@ -826,8 +832,8 @@ Main components
 }
 @media only screen and (min-width: 768px) {
     #cd-logo {
-        left: 20px;
-        top: 24px;
+        left: -10px;
+        top: -48px;
     }
 }
 @media only screen and (min-width: 1170px) {
