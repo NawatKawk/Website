@@ -37,7 +37,7 @@
 		<div class='preloader'><div class='loaded'>&nbsp;</div></div>
 
 
-        <nav id="main-nav">
+        <nav id="main-nav" class="navigation" >
             <ul>
                 <li><a href="#home"><span>Home</span></a></li>
                 <li><a href="#about"><span>About Me</span></a></li>
@@ -59,13 +59,29 @@
                                 <div id="cd-logo">
                                     <a href="index.html"><img src="assets/images/nawat logo.png" alt="Logo"></a>
                                 </div>
-                                <a class="cd-menu-trigger" href="#main-nav"><span></span></a>
+                                <div class="container-wrap">
+
+			<nav id="colorlib-main-menu" role="navigation" class="navbar" style="position:fixed; right:5px; overflow:auto; ">
+
+						<li class="active"><a href="#home" data-nav-section="home">Home</a></li>
+						<li><a href="#about" data-nav-section="about">About</a></li>
+						<li><a href="#skills" data-nav-section="skills">Skills</a></li>
+						<li><a href="#experience" data-nav-section="Achievements">Responsibilities</a></li>
+            <li><a href="#goals" data-nav-section="Personal goals">Personal Goals</a></li>
+
+          	<!-- <li><a href="#" data-nav-section="work">Work</a></li>
+						<li><a href="#" data-nav-section="blog">Blog</a></li> -->
+						<li><a href="#contact" data-nav-section="contact">Contact</a></li>
+					</ul>
+
+			</nav>
+
                             </header>
                         </div>
                         <div class="home-wrapper">
                             <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
                                 <div class="home-content">
-                                    <h1>Kawkeeree Nawat</h1>
+                                    <h1 id="home">Kawkeeree Nawat</h1>
                                     <p>#Chemical Engineer &nbsp; #Web Developer </p>
 
                                       <p>#Video Editor &nbsp; #Programmer</p>
@@ -85,8 +101,8 @@
                     <div class="about-wrapper">
 
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="about-photo">
-                                <img src="assets/images/man.png" alt="About Photo" />
+                            <div class="about-photo" style="border:10px solid black; position:relative; bottom:50px;">
+                                <img src="assets/images/centralworld.jpg" alt="About Photo" />
                             </div>
                         </div>
 
@@ -103,7 +119,7 @@
         </section>
 
         <!-- Sections -->
-        <section id="features" class="sections lightbg">
+        <section id="skills" class="sections lightbg">
 
             <div class="heading-content text-center">
                 <h3>My Skills</h1>
@@ -169,57 +185,58 @@
 
         <!-- Sections -->
         <section id="experience" class="experience">
-            <div class="overlay sections">
-                <div class="container">
-                    <div class="row">
-                        <div class="experience-wrapper">
+                  <div class="overlay sections">
+                      <div class="container">
+                          <div class="row">
+                              <div class="experience-wrapper">
 
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <div class="experience-content">
+                                  <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <div class="experience-content">
 
-                                    <h4>Work Experience</h4>
+                                          <h4>Work Experience</h4>
 
-                                    <div class="content-details content-border">
-                                        <h5>Mad Max Design</h5>
-                                        <h6>OCT 2013 - june 2014</h6>
-                                        <p>orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                                    </div>
+                                          <div class="content-details content-border">
+                                            <h5><b>Publicity Committee Member of College of Alice & Peter Tan's Freshman Orientation Camp 2019</b></h5>
+                                            <h6>Dec 2018 - Aug 2019</h6>
+                                            <p>Storyboard Ideation, Videography and Video Editting throughout the camp.</p>
 
-                                    <div class="content-details">
-                                        <h5>Crazy Design</h5>
-                                        <h6>OCT 2013 - june 2015</h6>
-                                        <p>orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                                    </div>
+                                          </div>
 
-                                </div>
-                            </div>
+                                          <div class="content-details">
+                                            <h5><b>Head of Logisitics of Outdoor Activities Club (ODAC) </b></h5>
+                                            <h6>2016-2017</h6>
+                                            <p>Ensure all the equipments are ready for every expeditions.</p>
 
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <div class="experience-content">
+                                          </div>
 
-                                    <h4>Education</h4>
+                                      </div>
+                                  </div>
 
-                                    <div class="content-details content-border">
-                                        <h5>Maddison University</h5>
-                                        <h6>OCT 2013 - june 2014</h6>
-                                        <p>orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                                    </div>
+                                  <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <div class="experience-content">
 
-                                    <div class="content-details">
-                                        <h5>Max Design & Art Institute</h5>
-                                        <h6>OCT 2013 - june 2015</h6>
-                                        <p>orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                                    </div>
+                                          <h4>Education</h4>
 
-                                </div>
-                            </div>
+                                          <div class="content-details content-border">
+                                              <h5><b> Bachelor of Chemical Engineering with Minor in Computer Science</h5>
+                                              <h6>Aug 2018 - Present</h6>
+                                              <p>Currently in Year 1, pursuing the degree</p>
+                                          </div>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                                          <div class="content-details">
+                                              <h5><b> Serangoon Junior College </b></h5>
+                                              <h6>2016 - 2017</h6>
+                                              <p>Graduated in 2017 with 80 Rank Points</p>
+                                          </div>
 
+                                      </div>
+                                  </div>
+
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
         <!-- Sections -->
       <!--  <section id="portfolio" class="sections">
             <div class="container">
@@ -286,7 +303,7 @@
         </section>-->
 
         <!-- Sections -->
-        <section id="testimonial" class="lightbg">
+        <section id="goals" class="lightbg">
             <div class="container">
                 <!-- Example row of columns -->
                 <div class="row">
@@ -316,7 +333,7 @@
                         </div>
 
                         <div class="col-md-7 col-sm-6 col-xs-12">
-                            <div class="profile-photo">
+                            <div class="profile-photo" >
                                 <img src="assets/images/shibuya.jpg" alt="testimonial" />
                             </div>
                         </div>
@@ -333,7 +350,7 @@
                     <div class="row">
                         <div class="contact-wrapper">
 
-                            <div class="col-md-6 col-sm-6 col-xs-12">
+                            <!-- <div class="col-md-6 col-sm-6 col-xs-12">
                                 <div class="contact-area">
 
                                     <h4>Leave a message</h4>
@@ -361,25 +378,24 @@
                                     </form>
 
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <div class="contact-details-area">
 
                                     <div class="contact-details">
                                         <h4>Address</h4>
-                                        <p>Gulshan Sales Office. SA Tower (Level-5), Plot#1, Road#134, Block SE(A), Gulshan-1, Dhaka 1212.</p>
+                                        <p>NUS College of Alice & Peter Tan</p>
                                     </div>
 
                                     <div class="contact-details">
                                         <h4>Phone</h4>
-                                        <p>+880 1912 109670</p>
-                                        <p>+880 1670 863946</p>
+                                        <p>+65 9176 9248</p>
                                     </div>
 
                                     <div class="contact-details">
                                         <h4>Web</h4>
-                                        <p>Mail: quicksayed@gmail.com</p>
+                                        <p>Mail: nawat.kawkeeree@u.nus.edu</p>
                                         <p>Website: dribbble.com/alisayed</p>
                                     </div>
 

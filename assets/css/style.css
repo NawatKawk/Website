@@ -54,6 +54,35 @@ img {
     -webkit-user-drag: none;
     user-drag: none;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    background-color: #333333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    border:2px solid white;
+    text-decoration:none;
+    color:white;
+
+}
+
+}
 a,
 a:hover,
 a:active,
