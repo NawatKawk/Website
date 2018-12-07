@@ -75,6 +75,9 @@
 .lnr-cog:before {
 	content: "\e810";
 }
+.lnr-movie:before{
+	contentL"\e824";
+}
 .lnr-trash:before {
 	content: "\e811";
 }
@@ -197,6 +200,9 @@
 }
 .lnr-screen:before {
 	content: "\e824";
+}
+.lnr-music:before{
+	content: "\e85a";
 }
 .lnr-smartphone:before {
 	content: "\e83a";

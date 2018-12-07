@@ -572,7 +572,7 @@ textarea::-ms-input-placeholder
     -o-transition:.3s ease-in-out;
 }
 .features-bg.design:hover{
-    background:#2d6879;
+    background:#525252;
 }
 .features-bg.development{
     background:#835aeb;
@@ -583,7 +583,7 @@ textarea::-ms-input-placeholder
     -o-transition:.3s ease-in-out;
 }
 .features-bg.development:hover{
-    background:#6b647c;
+    background:#525252;
 }
 .features-bg.testing{
     background:#002453;
@@ -594,7 +594,7 @@ textarea::-ms-input-placeholder
     -o-transition:.3s ease-in-out;
 }
 .features-bg.testing:hover{
-    background:#64cbc0;
+    background:#525252;
 }
 .features-bg.launch{
     background:#ff2b4a;
@@ -605,7 +605,7 @@ textarea::-ms-input-placeholder
     -o-transition:.3s ease-in-out;
 }
 .features-bg.launch:hover{
-    background:#222222;
+    background:#525252;
 }
 
 /*For Experience Section*/
