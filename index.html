@@ -73,7 +73,37 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 </script>
+<!-- the script below is for the scroll indiciator-->
+<script>
+window.onscroll = function() {myFunction()};
 
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+<!-- the script below is for sticky header at the top-->
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -105,6 +135,7 @@ for (var i = 0; i < btns.length; i++) {
                                 <div class="container-wrap">
 <!-- stype for the nav bar style="position:fixed; right:5px; overflow:auto; "-->
 			<nav id="colorlib-main-menu" role="navigation" class="navbar">
+        <div class="header">
         <div id="cd-logo" class="cd-logo">
             <a href="index.html"><img src="assets/images/nawat logo.png" alt="Logo"></a>
         </div>
@@ -120,7 +151,11 @@ for (var i = 0; i < btns.length; i++) {
           	<!-- <li><a href="#" data-nav-section="work">Work</a></li>
 						<li><a href="#" data-nav-section="blog">Blog</a></li> -->
 						<li><a href="#contact" data-nav-section="contact">Contact</a></li>
-					</ul>
+					</ul
+          <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+</div>>
 
 			</nav>
 

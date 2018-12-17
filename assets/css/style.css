@@ -497,9 +497,49 @@ textarea::-ms-input-placeholder
     -o-background-size: cover;
     width: 100%;
     overflow: hidden;
-
-
 }
+/*the section below is for the scroll indicator*/
+    .header {
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      width: 100%;
+      background-color: #1C3A67;
+      box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+    }
+
+    /* The progress container (grey background) */
+    .progress-container {
+      width: 100%;
+      height: 8px;
+      background: #1C3A67;
+    }
+
+    /* The progress bar (scroll indicator) */
+    .progress-bar {
+      height: 8px;
+      background: #4caf50;
+      width: 0%;
+    }
+
+
+
+    /* Page content */
+    .content {
+      padding: 16px;
+    }
+
+    /* The sticky class is added to the header with JS when it reaches its scroll position */
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%
+    }
+
+    /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .content {
+      padding-top: 102px;
+    }
 .home-wrapper{
     margin-top:120px;
     color:#fff;
