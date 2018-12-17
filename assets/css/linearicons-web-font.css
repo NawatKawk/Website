@@ -8,6 +8,8 @@
 		url('../fonts/Linearicons-Free.svg?w118d#Linearicons-Free') format('svg');
 	font-weight: normal;
 	font-style: normal;
+
+	
 }
 
 .lnr {
@@ -72,11 +74,17 @@
 .lnr-lock:before {
 	content: "\e80f";
 }
+.lnr-laptop:before{
+	content:"\e83d";
+}
+.lnr-moon:before{
+	content:"\e808"
+}
 .lnr-cog:before {
 	content: "\e810";
 }
 .lnr-movie:before{
-	contentL"\e824";
+	content"\e824";
 }
 .lnr-trash:before {
 	content: "\e811";

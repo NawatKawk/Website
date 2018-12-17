@@ -10,6 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
@@ -28,6 +29,51 @@
         <link rel="stylesheet" href="assets/css/responsive.css" />
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <!-- the script below is for smooth scrolling-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<!-- the script below is for highlighting each section -->
+<script>
+var btnContainer = document.getElementById("colorlib-main-menu");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("list");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -37,7 +83,7 @@
 		<div class='preloader'><div class='loaded'>&nbsp;</div></div>
 
 
-        <nav id="main-nav" class="navigation" >
+        <!-- <nav id="main-nav" class="navigation" >
             <ul>
                 <li><a href="#home"><span>Home</span></a></li>
                 <li><a href="#about"><span>About Me</span></a></li>
@@ -47,7 +93,7 @@
 
             </ul>
             <a href="#0" class="cd-close-menu">Close<span></span></a>
-        </nav>
+        </nav> -->
 
         <!--Home page style-->
         <header id="home" class="home home-main-content">
@@ -56,19 +102,20 @@
                     <div class="row">
                         <div class="div-menu">
                             <header class="cd-header">
-                                <div id="cd-logo">
-                                    <a href="index.html"><img src="assets/images/nawat logo.png" alt="Logo"></a>
-                                </div>
                                 <div class="container-wrap">
+<!-- stype for the nav bar style="position:fixed; right:5px; overflow:auto; "-->
+			<nav id="colorlib-main-menu" role="navigation" class="navbar">
+        <div id="cd-logo" class="cd-logo">
+            <a href="index.html"><img src="assets/images/nawat logo.png" alt="Logo"></a>
+        </div>
 
-			<nav id="colorlib-main-menu" role="navigation" class="navbar" style="position:fixed; right:5px; overflow:auto; ">
-
-						<li class="active"><a href="#home" data-nav-section="home">Home</a></li>
-						<li><a href="#about" data-nav-section="about">About</a></li>
-						<li><a href="#skills" data-nav-section="skills">Skills</a></li>
-						<li><a href="#experience" data-nav-section="Achievements">Responsibilities</a></li>
-            <li><a href="#goals" data-nav-section="Personal goals">Personal Goals</a></li>
-            <li><a href="#hobbies" data-nav-section="hobbies">Hobbies</a></li>
+<ul>
+						<li class="list active"><a href="#home" data-nav-section="home">Home</a></li>
+						<li class="list"><a href="#about" data-nav-section="about">About</a></li>
+						<li class="list"><a href="#skills" data-nav-section="skills">Skills</a></li>
+						<li class="list"><a href="#experience" data-nav-section="Achievements">Responsibilities</a></li>
+            <li class="list"><a href="#goals" data-nav-section="Personal goals">Goals</a></li>
+            <li class="list"><a href="#hobbies" data-nav-section="hobbies">Hobbies</a></li>
 
           	<!-- <li><a href="#" data-nav-section="work">Work</a></li>
 						<li><a href="#" data-nav-section="blog">Blog</a></li> -->
@@ -82,7 +129,7 @@
                         <div class="home-wrapper">
                             <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
                                 <div class="home-content">
-                                    <h1 id="home">Kawkeeree Nawat</h1>
+                                    <h1 id="home" class="name">Kawkeeree Nawat</h1>
                                     <p>#Chemical Engineer &nbsp; #Web Developer </p>
 
                                       <p>#Video Editor &nbsp; #Programmer</p>
@@ -347,7 +394,8 @@
           <div class="overlay sections" style="background-color:#D0E6E9">
 
             <div class="heading-content text-center">
-                <h3>My Hobbies</h1>
+                <h3>My Hobbies</h3>
+                <p style="font-size: 20px;"> There are many things that I like to do </p>
             </div>
 
             <div class="container text-center">
@@ -361,32 +409,29 @@
                                 <div class="features-item">
                                     <i class="lnr lnr-music"></i>
                                     <h6>Listening to Music</h6>
-                                    <p> <a href="https://open.spotify.com/user/1176511519?si=e31XoQa5TkeE_LrExt4gZw">Spotify</a> </p>
+                                    <p> <a href="https://open.spotify.com/user/1176511519?si=e31XoQa5TkeE_LrExt4gZw" target="_blank">Spotify</a> </p>
 
                                 </div>
 
                             </div>
                         </div>
-
                         <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="features-bg development">
+                            <div class="features-bg moon"> <!-- for the box of differenet hobbies-->
 
-                                <div class="features-item">
-                                 <i class="lnr lnr-movie"><i>
-                                    <h6>Web Development</h6>
-                                    <p> HTML, CSS, JavaScript </p>
+                                <div class="features-item" > <!-- for the font text-->
+                                    <i class="lnr lnr-moon"></i> <!-- for the logo -->
+                                    <h6>Sleeping</h6>
+                                    <p>2330 - 0730</p>
                                 </div>
 
                             </div>
                         </div>
-
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="features-bg testing">
 
                                 <div class="features-item">
-                                    <i class="lnr lnr-dinner"></i>
-                                    <h6>Programming</h6>
-                                    <p>C</p>
+                                    <i class="lnr lnr-laptop"></i>
+                                    <h6>Netflix</h6>
                                 </div>
 
                             </div>
@@ -396,8 +441,8 @@
                             <div class="features-bg launch">
 
                                 <div class="features-item">
-                                    <i class="lnr lnr-rocket"></i>
-                                    <h6><a href="#">Launch</a></h6>
+                                    <i class="fas fa-laugh" ></i>
+                                    <h6>Smile</h6>
                                 </div>
 
                             </div>
@@ -480,7 +525,7 @@
                         <div class="main-footer">
 
                             <div class="social">
-                                <a href="#">Back To The Top</a>
+                                <a href="#home">Back To The Top</a>
                                 <!-- <a href="#"><i class="fa fa-linkedin"></i></a>
                                 <a href="#"><i class="fa fa-behance"></i></a>
                                 <a href="#"><i class="fa dribbble fa-dribbble"></i></a> -->
