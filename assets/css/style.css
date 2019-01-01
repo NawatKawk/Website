@@ -159,6 +159,7 @@ h3 {
     /*font-family: 'Lane', sans-serif;*/
     font-weight: 300;
     margin: 0;
+    font-family:"raleway"
     color:#525252;
 }
 h4,
@@ -230,6 +231,7 @@ p:last-child {
 
 .lightbg {
     background-color: #dddfeb;
+
 }
 .transition {
     -webkit-transition: all 300ms linear;
@@ -467,7 +469,7 @@ textarea::-ms-input-placeholder
 }
 .heading-content h3{
     font-size:40px;
-    font-family: "Raleway Webfont";
+    font-family: "Raleway";
     font-weight:700;
     letter-spacing:3px;
 }
@@ -683,11 +685,48 @@ textarea::-ms-input-placeholder
 .features-bg.launch:hover{
     background:#525252;
 }
+/*FOr updated skill section */
+.lightBgUpdatedSkill{
+  padding-top:20px;
+  paddng-bottom:40px;
+  background-color:#D6EAF8;
 
+}
+.bgFirstRow{
+  background-color: #2471A3;
+  color: white;
+  font-size: 45px;
+  font-family: robotobold;
+
+}
+.table {
+  width : 100%;
+  padding-bottom: 20px;
+}
+caption{
+  text-align: center;
+  font-size: 40px;
+  font-family:raleway;
+}
+th{
+  border:1px solid black;
+  padding:30px;
+  width:100%;
+  font-size:30px;
+  font-family: robotobold;
+}
+tr,td {
+  border:1px solid black;
+  padding: 20px;
+  font-size: 20px;
+  font-family: robotobold;
+  text-align: center;
+
+}
 /*For Experience Section*/
 
 .experience{
-    background: url(../images/city.jpg) no-repeat center top fixed;
+    background: url(../images/SanFran.jpg) no-repeat center top fixed;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -768,7 +807,10 @@ textarea::-ms-input-placeholder
     margin-bottom:5px;
 }
 .profile-photo{
-    height:650px;
+    max-width: 100%;
+    height: auto;
+
+
 }
 
 /*For Contact Section*/
