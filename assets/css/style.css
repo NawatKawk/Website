@@ -501,6 +501,7 @@ textarea::-ms-input-placeholder
     overflow: hidden;
 }
 /*the segment for topnav icon to be shown at smaller screen */
+
 .topnav .icon {
   display: none;
 }
@@ -687,7 +688,7 @@ textarea::-ms-input-placeholder
 }
 /*FOr updated skill section */
 .lightBgUpdatedSkill{
-  padding-top:20px;
+  padding-top:100px;
   paddng-bottom:40px;
   background-color:#D6EAF8;
 
@@ -697,13 +698,12 @@ textarea::-ms-input-placeholder
   color: white;
   font-size: 45px;
   font-family: robotobold;
+  width:100px;
 
 }
 
 @media screen and (max-width: 600px){
   table tr{
-    border-bottom: 3px solid #ddd;
-    display: block;
 
   }
 
