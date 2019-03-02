@@ -270,8 +270,12 @@ Section
 .footer {
     padding-top:50px;
     padding-bottom:50px;
-    color:#fff;
-    background:#222222;
+    color:white;
+    background:#80A1B6;
+}
+.footer a:hover{
+  text-decoration: none;
+  color: black;
 }
 section .subtitle h5 {
     margin-top: 10px;
@@ -694,7 +698,7 @@ textarea::-ms-input-placeholder
 
 }
 .bgFirstRow{
-  background-color: #2471A3;
+  background-color: #88bfe2;
   color: white;
   font-size: 45px;
   font-family: robotobold;
@@ -821,11 +825,16 @@ tr,td {
 
 
 }
+/*For hobbies (videos) section */
+.features-wrapper p{
+  font-size: 15px;
+  line-height: 1.6;
+}
 
 /*For Contact Section*/
 
 .contact{
-    background: url(../images/contact2.jpg) no-repeat center top fixed;
+    background: url(../images/Sunset.jpg) no-repeat center top fixed;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
