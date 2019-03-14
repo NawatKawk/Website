@@ -506,6 +506,12 @@ textarea::-ms-input-placeholder
 }
 /*the segment for topnav icon to be shown at smaller screen */
 
+.downloadStyle{
+  padding: 20px;
+  border-color: white;
+
+}
+
 .topnav .icon {
   display: none;
 }
