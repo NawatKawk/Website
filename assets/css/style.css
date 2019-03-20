@@ -506,9 +506,19 @@ textarea::-ms-input-placeholder
 }
 /*the segment for topnav icon to be shown at smaller screen */
 
-.downloadStyle{
-  padding: 20px;
-  border-color: white;
+.download p a{
+  color:white;
+  padding: 12px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+.download p a:hover{
+  color: black;
+  background: white;
+  padding: 12px 30px;
+   border: 1px solid white;
+   text-decoration: none;
 
 }
 
@@ -881,11 +891,21 @@ tr,td {
     margin-bottom:20px;
 }
 .contact-details h4{
-    margin-bottom:25px;
+    margin-bottom:30px;
 }
 .contact-details p{
+  margin: 0 0 10px;
+  color:white;
+  font-size:20px;
+  text-decoration: none;
+
+}
+.contact-details p a:hover{
     margin: 0 0 10px;
-    color:#c3bec2;
+    color:white;
+    font-size:20px;
+    text-decoration: none;
+
 }
 
 /* For Footer Area */
