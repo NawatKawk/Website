@@ -505,20 +505,20 @@ textarea::-ms-input-placeholder
     overflow: hidden;
 }
 /*the segment for topnav icon to be shown at smaller screen */
-
-.download p a{
-  color:white;
+#download {
+  font-size:25px;
+  color:black;
   padding: 12px 30px;
-  text-decoration: none;
   text-transform: uppercase;
+  border:2px solid white;
+  background-color: white;
 
 }
-.download p a:hover{
-  color: black;
+#download a:hover{
+  color: white;
   background: white;
   padding: 12px 30px;
    border: 1px solid white;
-   text-decoration: none;
 
 }
 
