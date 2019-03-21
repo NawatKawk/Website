@@ -512,6 +512,7 @@ textarea::-ms-input-placeholder
   text-transform: uppercase;
   border:2px solid white;
   background-color: white;
+  opacity: 25%;
 
 }
 #download a:hover{
