@@ -259,9 +259,13 @@ Section
     color:#fff;
 }
 .sections3{
-    padding-top: 100px;
+    padding: 100px;
     position: relative;
     overflow: hidden;
+}
+.about-photo{
+  border:5px solid black;
+  position:relative;
 }
 .sections4{
     padding-top:5px;
@@ -306,7 +310,7 @@ section .subtitle-half h5 {
     background-color: rgba(0, 0, 0, .45);
     width: 100%;
     overflow:hidden;
-    min-height:800px;
+    min-height:1000px;
 }
 .overlay-fluid-block {
     background-color: rgba(0, 0, 0, 0.5);
@@ -497,7 +501,7 @@ textarea::-ms-input-placeholder
 
 /*For Home Section*/
 .home{
-    background: url(../images/nawatRotate.jpg) no-repeat center top fixed;
+    background: url(../images/taiwanAlishan.jpg) no-repeat center top fixed;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -535,7 +539,8 @@ textarea::-ms-input-placeholder
   box-sizing: border-box;
   width: 100%;
   background-color: #1C3A67;
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+  z-index: 4;
 
 }
 .topnav ul{
@@ -725,16 +730,19 @@ textarea::-ms-input-placeholder
 }
 
 @media screen and (max-width: 600px){
-  table tr{
+  [class*="col-"]{
+    width:100%;
 
   }
+
+
 
 }
 .table {
   width : 100%;
   padding-bottom: 20px;
   overflow-x: auto;
-  
+
 }
 caption{
   text-align: center;
